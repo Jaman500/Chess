@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Player
+comment1.params=
+comment1.target=Player()
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ Player\n
+comment2.params=
+comment2.target=void\ chooseMove()
+comment3.params=
+comment3.target=void\ help()
+comment4.params=x
+comment4.target=void\ sop(java.lang.String)
+numComments=5
