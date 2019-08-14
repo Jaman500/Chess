@@ -25,9 +25,11 @@ public abstract class Piece
     {
         return dead;
     }
-    
+    //moves the piece
     public abstract void move();
+    //kills other pieces
     public abstract void kill();
+    //checks to see if the move is valid
     public abstract boolean isValid();
     
 

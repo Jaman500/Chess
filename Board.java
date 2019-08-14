@@ -1,4 +1,4 @@
-
+import GridWorldCode.framework.info.gridworld.grid.*;
 /**
  * Write a description of class Board here.
  *
@@ -15,7 +15,8 @@ public class Board
      */
     public Board()
     {
-        board = new char[8][8];
+        BoundedGrid g = new BoundedGrid(8,8);
+        /*board = new char[8][8];
         for(int o = 2; o < 6; o++)
         {
             for(int i = 0; i < 8; i++)
@@ -32,7 +33,7 @@ public class Board
         board[1][1] = 'B'; board[1][6] = 'B'; board[6][1] = 'B'; board[6][6] = 'B';
         board[1][2] = 'K'; board[1][5] = 'K'; board[6][2] = 'K'; board[6][5] = 'K';
         board[1][3] = 'Q'; board[6][4] = 'Q';
-        board[1][4] = 'M'; board[6][3] = 'M';
+        board[1][4] = 'M'; board[6][3] = 'M';*/
     }
 
     public char[][] getBoard()
@@ -61,6 +62,15 @@ public class Board
         sop("-----------------------------------");
         sop("| | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |");
         sop("-----------------------------------");
+    }
+    
+    public boolean isOpen(int a, int b)
+    {
+        if(board[a][b] != ' ')
+        {
+            return false;
+        }
+        return true;
     }
     
     public void sop(String x)

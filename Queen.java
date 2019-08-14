@@ -19,6 +19,7 @@ public class Queen extends Piece
         value = 9;
     }
 
+    //Queens can move in any direction 
     public void move()
     {
     }
@@ -30,5 +31,10 @@ public class Queen extends Piece
     public boolean isValid()
     {
         return false;
+    }
+    
+    public void print()
+    {
+        System.out.println("♛");
     }
 }

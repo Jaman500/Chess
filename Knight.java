@@ -19,6 +19,12 @@ public class Knight extends Piece
         value = 3;
     }
     
+    
+    /*
+     * Knights can move in an L shape
+     * they move 2 spaces in one direction, the one in a perpendicular direction
+     * they can jump pieces as well
+     */
     public void move()
     {
     }
@@ -30,5 +36,10 @@ public class Knight extends Piece
     public boolean isValid()
     {
         return false;
+    }
+    
+    public void print()
+    {
+        System.out.println("♞");
     }
 }

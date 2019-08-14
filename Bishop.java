@@ -19,6 +19,7 @@ public class Bishop extends Piece
         value = 3;
     }
 
+    //bishops can move in a diagonal straight line
     public void move()
     {
     }
@@ -30,5 +31,10 @@ public class Bishop extends Piece
     public boolean isValid()
     {
         return false;
+    }
+    
+    public void print()
+    {
+        System.out.println("♝");
     }
 }

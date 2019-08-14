@@ -18,7 +18,8 @@ public class Rook extends Piece
         super();
         value = 5;
     }
-
+    
+    //rook can move in a straight line forwards, backwards, or sideways
     public void move()
     {
     }
@@ -30,5 +31,10 @@ public class Rook extends Piece
     public boolean isValid()
     {
         return false;
+    }
+    
+    public void print()
+    {
+        System.out.println("♜");
     }
 }
